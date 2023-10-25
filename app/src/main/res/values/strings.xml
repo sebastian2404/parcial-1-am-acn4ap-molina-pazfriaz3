@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ReTicket</string>
     <string name="museum_4_11_23_peru_535">Museum -4/11/23- Peru 535</string>
-    <string name="descripcion">Descripcion</string>
+    <string name="descripcion">Descripción</string>
     <string name="preventa_2">Preventa 2</string>
     <string name="preventa_1">Preventa 1</string>
     <string name="preventa_3">Preventa 3</string>
