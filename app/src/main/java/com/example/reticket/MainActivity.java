@@ -20,17 +20,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(siguiente);
     }
 
-    public void mostrarInfo() {
-        Toast.makeText(getBaseContext(), "MUSEUM\n" +
-                "\n" +
-                "TAYLOR FEST\n" +
-                "\n" +
-                "WILDEST HALLOWEEN\n" +
-                "\n" +
-                "Viernes 27 de Octubre\n" +
-                "\n" +
-                "Open Doors: 00 hs ... Till Close ...\n" +
-                "\n" +
-                "Perú 535 - San Telmo" , Toast.LENGTH_SHORT ).show();
+    public void mostrarInfo(View v) {
+        Toast.makeText(getBaseContext(), "Cachengue y cumbia " , Toast.LENGTH_SHORT ).show();
     }
 }
