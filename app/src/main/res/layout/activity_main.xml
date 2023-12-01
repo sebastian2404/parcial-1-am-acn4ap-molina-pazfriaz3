@@ -110,6 +110,16 @@
                 app:layout_constraintVertical_bias="0.52"
                 tools:ignore="MissingConstraints" />
 
+            <Button
+                android:id="@+id/botonCarrito2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF9800"
+                android:text="Agregar entrada"
+                android:textColor="#000000"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="310dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
