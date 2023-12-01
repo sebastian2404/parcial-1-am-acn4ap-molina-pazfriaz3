@@ -38,20 +38,20 @@ public class Login extends AppCompatActivity {
         if(currentUser != null){
             String email = currentUser.getEmail();
            Log.i("firebase email", email);
-           //Intent  intent = new Intent(getApplicationContext(),MainActivity.class);
-           //startActivity(intent);
 
         } else {
             Log.i("firebase", "No hay usuario");
 
             Intent intent = new  Intent(getApplicationContext(),LoginActivity.class);
             startActivity(intent);
-            //this.login("sebastian.paz@davinci.edu.ar","prueba123");
+            //this.login("sebastian.paz@davinci.edu.ar","prueba");
         }
 
     }
 
     public void logout(View v){
+        Intent intent = new  Intent(getApplicationContext(),LoginActivity.class);
+        startActivity(intent);
         mAuth.signOut();
     }
 
