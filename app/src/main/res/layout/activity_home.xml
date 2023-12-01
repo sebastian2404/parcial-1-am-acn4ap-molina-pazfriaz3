@@ -74,6 +74,7 @@
                 android:id="@+id/button4"
                 android:layout_width="251dp"
                 android:layout_height="wrap_content"
+                android:onClick="verEvento"
                 android:text="Ver evento" />
 
         </TableRow>
