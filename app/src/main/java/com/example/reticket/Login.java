@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login2);
         mAuth = FirebaseAuth.getInstance();
     }
 
@@ -38,6 +38,8 @@ public class Login extends AppCompatActivity {
         if(currentUser != null){
             String email = currentUser.getEmail();
            Log.i("firebase email", email);
+            Intent intent = new  Intent(getApplicationContext(),Home.class);
+            startActivity(intent);
 
         } else {
             Log.i("firebase", "No hay usuario");
@@ -49,10 +51,5 @@ public class Login extends AppCompatActivity {
 
     }
 
-    public void logout(View v){
-        Intent intent = new  Intent(getApplicationContext(),LoginActivity.class);
-        startActivity(intent);
-        mAuth.signOut();
-    }
 
 }

@@ -7,7 +7,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +26,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void mostrarInfo(View v) {
         Toast.makeText(getBaseContext(), "Cachengue y cumbia " , Toast.LENGTH_SHORT ).show();
+    }
+
+    public void logout(View v){
+        Intent intent = new  Intent(getApplicationContext(),LoginActivity.class);
+        startActivity(intent);
+        mAuth.signOut();
     }
     
 }
