@@ -23,4 +23,9 @@ public class MainActivity2 extends AppCompatActivity {
         startActivity(intent);
         mAuth.signOut();
     }
+
+    public void regresar(View v){
+        Intent intent = new  Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+    }
 }
